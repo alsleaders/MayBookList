@@ -1,12 +1,16 @@
 :root {
-  font: 16px / 1 sans-serif;
+  font: 36px / 1 sans-serif;
+  font-family: Lucida, Helvetica, sans-serif;
+  color: slategray;
 }
 
 html {
   height: 100%;
+  margin: 2rem;
+  border: 1rem inset indianred;
+  background-color: aliceblue;
 }
 
 body {
-  margin: 0;
   min-height: 100%;
 }
