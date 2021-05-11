@@ -1,6 +1,6 @@
 // import React, { useState, useEffect } from 'react'
 import React, { Component } from 'react'
-import axios from 'axios'
+//import axios from 'axios'
 import Book from './Book'
 
 // const [books, setBooks] = useState([])
@@ -20,12 +20,20 @@ class Container extends Component {
   }
 
   componentDidMount() {
-    axios.get('/api/Books').then((resp) => {
-      console.log(resp.data)
-      this.setState({
-        books: resp.data,
+    // axios.get('/api/Books').then((resp) => {
+    //   console.log(resp.data)
+    //   this.setState({
+    //     books: resp.data,
+    //   })
+    // })
+    fetch('/api/Books')
+      .then((response) => {
+        return response.json()
       })
-    })
+      .then((json) => {
+        console.log(json)
+        this.setState({ books: json })
+      })
   }
 
   // componentDidMount() {
@@ -45,7 +53,7 @@ class Container extends Component {
         <div>
           <section>
             {this.state.books.map((book) => {
-              return <Book Name={book.Name} />
+              return <Book key={book.id} value={book.title} />
             })}
           </section>
         </div>

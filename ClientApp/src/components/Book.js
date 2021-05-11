@@ -4,7 +4,7 @@ class Book extends Component {
   render() {
     return (
       <div>
-        <p>{this.props.Name}</p>
+        <p>{this.props.value}</p>
       </div>
     )
   }
