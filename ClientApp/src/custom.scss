@@ -7,10 +7,15 @@
 html {
   height: 100%;
   margin: 2rem;
-  border: 1rem inset indianred;
+
   background-color: aliceblue;
 }
 
 body {
   min-height: 100%;
+}
+
+.container {
+  border: 1rem inset indianred;
+  padding-left: 1rem;
 }
