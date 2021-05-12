@@ -50,7 +50,7 @@ class Container extends Component {
   render() {
     return (
       <>
-        <div class="container">
+        <div className="container">
           <section>
             {this.state.books.map((book) => {
               return <Book key={book.id} value={book.title} />
