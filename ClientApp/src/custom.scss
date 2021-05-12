@@ -45,7 +45,7 @@ body {
 
 .navbar a {
   font-size: 16px;
-  font-weight: bold;
+  // font-weight: bold;
   margin-left: 15px;
   line-height: 25px;
 }
@@ -53,4 +53,55 @@ body {
 .navbar a:hover {
   color: #4183c4;
   cursor: pointer;
+}
+
+form {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-content {
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // flex-direction: column;
+}
+
+.form-center div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  // margin: 1rem;
+  border: rgb(119, 26, 26) 2rem;
+}
+
+.book-input {
+  width: 100%;
+  margin: 2rem;
+}
+
+// .book-button {
+//   margin-left: 1rem;
+// }
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.button-container button {
+  margin: 0.25rem;
+  width: 90%;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: #26f0f1;
+  color: #202a25;
 }

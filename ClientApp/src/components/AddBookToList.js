@@ -29,9 +29,10 @@ export default function AddBookToList() {
 
   return (
     <section>
-      <form class="form-center" onSubmit={addBookToList}>
+      <form className="form-center" onSubmit={addBookToList}>
         <div>
           <input
+            className="book-input"
             type="text"
             placeholder="Did you buy another book?"
             value={tome.name}
@@ -40,7 +41,7 @@ export default function AddBookToList() {
             }}
           />
         </div>
-        <button>+</button>
+        <button className="book-button">+</button>
       </form>
       <ul>
         {tomeList.map((item) => {
