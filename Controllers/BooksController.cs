@@ -35,7 +35,9 @@ namespace MayBookList.Controllers
         {
             // Uses the database context in `_context` to request all of the Books, sort
             // them by row id and return them as a JSON array.
-            return await _context.Books.OrderBy(row => row.Id).ToListAsync();
+            return await _context.Books
+                .OrderBy(row => row.AuthorId)
+                .ToListAsync();
         }
 
         // GET: api/Books/5

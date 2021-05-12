@@ -16,7 +16,7 @@ body {
 }
 
 .container {
-  border: 1rem inset indianred;
+  border: 0.1rem inset rgba(0, 0, 0, 0.075);
   padding-left: 1rem;
 }
 
@@ -39,7 +39,7 @@ body {
   padding-left: 0rem;
 }
 
-.navbar li {
+li {
   list-style: none;
 }
 
@@ -104,4 +104,23 @@ form {
 button:hover {
   background-color: #26f0f1;
   color: #202a25;
+}
+
+.completed > .item-text {
+  text-decoration: line-through;
+}
+
+.book-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.each-book {
+  border-style: solid;
+  padding: 1rem;
+  border-color: steelblue;
+  margin: 1rem;
 }
