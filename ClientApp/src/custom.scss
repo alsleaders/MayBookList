@@ -1,6 +1,7 @@
 :root {
   font: 24px / 1 sans-serif;
-  font-family: Lucida, Helvetica, sans-serif;
+  //font-family: Lucida, Helvetica, sans-serif;
+  font-family: 'Atkinson Hyperlegible', sans-serif;
   color: slategray;
 }
 
@@ -122,5 +123,11 @@ button:hover {
   border-style: solid;
   padding: 1rem;
   border-color: steelblue;
+  background-color: rgb(113, 155, 246);
   margin: 1rem;
+}
+
+.greeting {
+  display: flex;
+  justify-content: space-around;
 }
